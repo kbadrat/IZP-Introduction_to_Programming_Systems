@@ -1,29 +1,29 @@
-The program receives passwords and checks each one for the necessary rules.
-Passwords that have been verified will be displayed.
-The program runs in the following forms:
-```/pwcheck LEVEL PARAM [--stats] or ./pwcheck [-l LEVEL] [-p PARAM] [--stats]```
-When using additional switches, the program does not require arguments only in fixed positions.
-LEVEL   - is an integer in the interval [1, 4] that specifies the required security level.
-PARAM   - is a positive integer that specifies an additional rule parameter.
---stats - if specified, statistics of the analyzed passwords will be displayed.
-LEVELs and PARAMs
-The security level specifies that passwords must comply with all rules at that and lower levels.
-LEVEL 1: The password contains at least 1 uppercase and 1 lowercase letter.
-LEVEL 2: The password contains characters from at least PARAM groups.
-         Groups:
-                * lowercase letters (a-z)
-                * uppercase letters (A-Z)
-                * numbers (0-9)
-                * special characters (Unique 32-126)
-LEVEL 3: The password does not contain the same sequence of characters of at least PARAM.
-LEVEL 4: The password does not contain two identical substrings of at least PARAM.
-Statistics include:
-                   - number of different characters found in all passwords
-                   - length of the shortest password	
-                   - average password length
-Statistics include all passwords.
-Details
-The password is entered on a separate line.
-Contains only Unique characters, except newline character.
-The maximum length of the password is 100 characters, otherwise it is invalid data.
-The program supports an unlimited number of passwords.
+"The program receives passwords and checks each one for the necessary rules.\n" 
+"Passwords that have been verified will be displayed.\n\n"
+"The program runs in the following forms:\n"
+"./pwcheck LEVEL PARAM [--stats] or ./pwcheck [-l LEVEL] [-p PARAM] [--stats]\n"
+"When using additional switches, the program does not require arguments only in fixed positions.\n\n"
+"LEVEL   - is an integer in the interval [1, 4] that specifies the required security level.\n"
+"PARAM   - is a positive integer that specifies an additional rule parameter.\n"
+"--stats - if specified, statistics of the analyzed passwords will be displayed.\n\n"
+"LEVELs and PARAMs\n"
+"The security level specifies that passwords must comply with all rules at that and lower levels.\n"
+"LEVEL 1: The password contains at least 1 uppercase and 1 lowercase letter.\n"
+"LEVEL 2: The password contains characters from at least PARAM groups.\n"
+"         Groups:\n"
+"                * lowercase letters (a-z)\n"
+"                * uppercase letters (A-Z)\n"
+"                * numbers (0-9)\n"
+"                * special characters (Unique 32-126)\n"
+"LEVEL 3: The password does not contain the same sequence of characters of at least PARAM.\n"
+"LEVEL 4: The password does not contain two identical substrings of at least PARAM.\n\n"
+"Statistics include:\n"
+"                   - number of different characters found in all passwords\n"
+"                   - length of the shortest password\n"			
+"                   - average password length\n"
+"Statistics include all passwords.\n\n"
+"Details\n"
+"The password is entered on a separate line.\n"
+"Contains only Unique characters, except newline character.\n"
+"The maximum length of the password is 100 characters, otherwise it is invalid data.\n" 
+"The program supports an unlimited number of passwords.\n");		
